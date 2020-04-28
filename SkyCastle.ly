@@ -16,7 +16,7 @@ upper = \relative c'' {
   a2. a8 b8   | c4. b8 c4 e4 | b2 r4 e,4        | a4. g8 a4 c4     | \break
   g2 r4 f8 e8 | f4. e8 f4 c'4 | e2 r8 c8 c8 c8  | b4. fis8 f4 b4   | \break
   b2 r4 a8 b8 | c4. b8 c4 e4 | b2 r4 e,8 e8     | a4. g8 a4 c4     | \break
-  g2 r4 e4    | f4 c'8 b8 b4 c4  | d4 e8 c8 c2  | c8 b8 a4 b4 gis4 | <c, e a>1 | \break
+  g2 r4 e4    | f4 c'8 b8 b4 c4  | d4 e8 c8 c2  | c8 b8 a4 b4 gis4 | <c, e a>1\arpeggio \bar "|."
 }
 
 lower = \relative c {
@@ -35,12 +35,18 @@ lower = \relative c {
   a4 e'4 a2      | a4 c4 e4 c4    | e,4 g4 b2      | f4 a4 c4 a4  | \break
   c,4 g'4 c2     | d,4 f4 a4 f4   | a,4 e'4 a2     | b,4 fis'4 b4 f4 | \break
   e4 b'4 e2      | a,,4 e'4 a4 e4 | e,4 b'4 e2     | f,4 c'4 f4 c4   | \break
-  c4 g'4 c2      | d,4 a'4 d4 a4  | a,4 e'4 a4 e4  | f4 c'4 e,4 b'4  | a,1 |
+  c4 g'4 c2      | d,4 a'4 d4 a4  | a,4 e'4 a4 e4  | f4 c'4 e,4 b'4  | a,1 \arpeggio \bar "|."
+}
+
+\header {
+  title = "天空の城"
+  tagline = ##f
 }
 
 \score {
   \new PianoStaff <<
     \set PianoStaff.instrumentName = #"Piano  "
+    \set PianoStaff.connectArpeggios = ##t
     \new Staff = "upper" \upper
     \new Staff = "lower" \lower
   >>
