@@ -16,6 +16,12 @@ upper = \relative c'' {
   <a f>4 f16 a c8 c8. b16 b c d g, | g'8 e16 f g8 e16 f g b, a b c d e f | \break
   e8 c16 d e8 e,16 f g a g f g c b c | a8 c16 b a8 g16 f g f e f g a b c | \break
   a8 c16 b c8 b16 c b a b c d e f g | g8 e16 f g8 e16 f g16 b, a b c d e f | \break
+  e8 c16 d e8 e,16 f g a g f g c b c | a8 c16 b a8 g16 f g f e f g a b c | \break
+  a8 c16 b c8 b16 c b a b c d e f g | e8c16 d e8 d16 c d b c d e d c b | \break
+  c8 a16 b c8 c,16 d e f e d e c' b c | a8 c16 b a8 g16 f g f e f g a b c | \break
+  a8 c16 b c8 b 16 a b c d c b c a b | c1 | r1 | \break
+  r1 | r1 | r8 e16 f g8 e r8 d16 e f8 d | \break
+  r8 c16 d e8 c r8 e16 d c8 b | r8 a16 b c8 a r8 g16 a c8 g | \break
 }
 
 lower = \relative c {
@@ -34,6 +40,12 @@ lower = \relative c {
   f,, c' f a g, d' g b  | c, g' c4 g,8 d' b'4  | \break
   a,8 e' c'4 e,,8 e' g4 | f,8 c' a'4 c,8 g' c4 | \break
   f,,8 c' a'4 g,8 d' b'4 | c,8 g' c,4 g8 d' b'4    | \break
+  a,8 e' c'4 e,,8 e' g4 | f,8 c' a'4 c,8 g' c4 | \break
+  a,8 e' c'4 e,,8 e' g4 | f,8 c' a'4 c,8 g' c4 | \break
+  a,8 e' c'4 e,,8 e' g	4 | f,8 c' a'4 c,8 g' c4 | \break
+  f,,8 c' a'4 g,8 d' b'4 | c,8 g' c e g,, d' g b | a, e' a c e,, e' g b | \break
+  f, c' f a c, g' c e | f,, c' f a g, d' g b | c, e g c g, d' g b | \break
+  a, e' a c e,, e' g b  | f, c' f a c, e g c | \break
 }
 
 \header {
