@@ -53,7 +53,7 @@ lower = \relative c {
   a,8 e' c'4 e,,8 e' g4 | f,8 c' a'4 c,8 g' c4 | \break
   f,,8 c' a'4 g,8 d' b'4 | c,8 g' c4 g,8 d' b'4    | \break
   a,8 e' c'4 e,,8 e' g4 | f,8 c' a'4 c,8 g' c4 | \break
-  a,8 e' c'4 e,,8 e' g4 | f,8 c' a'4 c,8 g' c4 | \break
+  f,,8 c' a'4 g,8 d' b'4 | c,8 g' c4 g,8 d' b'4    | \break
   a,8 e' c'4 e,,8 e' g	4 | f,8 c' a'4 c,8 g' c4 | \break
   f,,8 c' a'4 g,8 d' b'4 | c,8 g' c e g,, d' g b | a, e' a c e,, e' g b | \break
   f, c' f a c, g' c e | f,, c' f a g, d' g b | c, e g c g, d' g b | \break
