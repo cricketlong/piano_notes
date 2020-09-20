@@ -26,6 +26,11 @@ lower = \relative c {
   \key c \major
   \time 4/4
 
+  r1 | a8 e' a e c' e, a e | d, a' d f a d a f | g, d' g d a e' a e | \break
+  f,8 c' f c g d' g d | e, b' e g b8 e b g | a, e' g c e a e c | e,, b' e g b d b g | \break
+  g, d' g b d f d b | a, e' a e a, e' a e | a, e' a e c' e, a e | d, a' d a f' a, d a | \break
+  g d' g d b' d, g d | c g ' c g e, b' e b | a e' a e c' e, a e | d, a' d  f a d a f | \break
+  f, c' f c g d' g d | e, b' e b g' b, e b | a e' a e a, e' a e | d, a' d a f' a, d a | \break
 }
 
 \header {
