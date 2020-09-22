@@ -31,15 +31,30 @@ lower = \relative c {
   g, d' g b d f d b | a, e' a e a, e' a e | a, e' a e c' e, a e | d, a' d a f' a, d a | \break
   g d' g d b' d, g d | c g ' c g e, b' e b | a e' a e c' e, a e | d, a' d  f a d a f | \break
   f, c' f c g d' g d | e, b' e b g' b, e b | a e' a e a, e' a e | d, a' d a f' a, d a | \break
+  g d' g d a' d, g d | c g' c g e, b' e b | a e' a e c' e, a e | d, a' d f a d a f | \break
+  f, c' f c g d' g d | a e' a e c' e, a e | f, c' f c g d' g d |  e, b' e g a, e' a e | \break
+  f, c' f c g d' g d | f, c' f a c f c a | e, b' e g b e b g | c, g' c g e' g, c g | \break
+  d, a' d f a d a f  | g, d' g d b' d, g d | c g' c g e, b' e b | a e' a e c' e, a e | \break
+  d, a' d f a d a f  | f, c' f a g, d' g d | a e' a e c' e, a e |  f, c' f c g d' g d | \break
+  e, b' e b a e' a e | f, c' f c g g' b d | f,, c' f a c f c a | e, b' e g b e b g | \break
+  c, g' c g e' g, c g | d, a' d f a d a f | g, d' g d b' d, g d | c g' c g e, b' e b | \break
+  a e' a e c' e, a e | e, b' e g b e b g | f, c' f c g d' g d | a e' a e c' e, a e | \break
+  f, c' f c g d' g d | g, d' g b d g d b | a, e' a e a, e' a4 | \break
 }
 
 \header {
   title = "月半小夜曲"
+  composer = " " % place holder
   tagline = ##f
 }
 
 \score {
-  \new PianoStaff <<
+  \new PianoStaff \with {
+    \override StaffGrouper.staff-staff-spacing = #'(
+                            (basic-distance . 10)
+                            (padding . 3))
+  }
+  <<
     \set PianoStaff.instrumentName = #"Piano  "
     \set PianoStaff.connectArpeggios = ##t
     \new Staff = "upper" \upper
@@ -47,4 +62,8 @@ lower = \relative c {
   >>
   \layout { }
   \midi { }
+}
+
+\paper {
+  top-margin = 10
 }
